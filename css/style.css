@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "FontAwesome-web";
+    src: url("../fonts/fontawesome-webfont.ttf");
+}@font-face {
+    font-family: "Flat-it-Compasse-Bold";
+    src: url("../fonts/Flat-it%20-%20Compasse-Bold.otf");
+}
+.house:before{
+    content:  "\f015";
+    font-family: FontAwesome-web;
+    color: #777777;
+    font-size: 21px;
+    padding-right: 10px;
+}
+.house{
+    text-transform: uppercase;
+    display: block;
+    padding-top: 7px;
+}
+#header-image{
+    margin: auto;
+    filter: grayscale(100%);
+    // Browser Specific
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    width: 100%;
+    height: auto;
+}
+.title-index{
+    position: relative;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title{
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+}
+.index-image{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.contact-wr{
+    padding: 15px 0;
+}
+.name{
+    display:  block;
+    font-size: 25px;
+    margin: 10px 0 0 45px;
+    text-transform: uppercase;
+}
+.foto{
+    position: relative;
+    display: block;
+    margin: 5px 0 0 82px;
+}
+.mobil{
+    display: block;
+    font-size: 18px;
+    margin: 20px 0 0 84px;
+}
+.email{
+    display: block;
+    font-size: 18px;
+    margin: 20px 0 0 76px;
+}
+.position{
+    margin: 2px 0 20px 75px;
+    font-size: 15px;
+}
+.mapa{
+    height: 400px;
+}
+@media (max-width: 768px) {
+    .name,
+    .foto,
+    .mobil,
+    .email,
+    .position{
+        margin: auto;
+    }
+    .contact-wr{
+        text-align: center;
+    }
+
+}
