@@ -4012,8 +4012,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav > li > a {
     font-family: 'Flat-it-Compasse-Bold';
-    padding-top: 10px;
-  padding-bottom: 10px;
+    padding-top: 25px;
+  padding-bottom: 25px;
   line-height: 20px;
     color: #fff;
     font-size: 21px;

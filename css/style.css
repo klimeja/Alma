@@ -33,6 +33,8 @@
     display: block;
     text-align: center;
     text-transform: uppercase;
+    border-bottom: 1px solid #777777;
+    border-top: 1px solid #777777;
 }
 .title{
     border-top: 1px solid #777777;
@@ -56,6 +58,7 @@
     position: relative;
     display: block;
     margin: 5px 0 0 82px;
+    border-radius: 200pxl;
 }
 .mobil{
     display: block;
@@ -87,3 +90,57 @@
     }
 
 }
+.slides h1{
+    position: relative;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+.slider-first{
+    background-image: url("../images/construction.png");
+    height: 450px;
+}.slider-second{
+    background-image: url("../images/change-old.png");
+    height: 450px;
+}.slider-third{
+    background-image: url("../images/destruction.png");
+    height: 450px;
+}
+ .slider-wr{
+     display: block;
+     height: 250px;
+     width: 60%;
+     margin: 10px auto;
+     background-color: #ffffff;
+     z-index: 100;
+     border-radius: 15px;
+     opacity: 0.75;
+ }
+ @media (max-width: 768px) {
+     .slider-wr{
+         width: 90%;
+     }
+ }
+ .hole{
+     display: block;
+     width: 100%;
+     height: 75px;
+     background-color: transparent;
+ }
+ .slider-text{
+     display: block;
+     position: relative;
+     text-align: center;
+     margin: 20px auto;
+     padding: 0 20px;
+     font-size: 18px;
+ }
+@media (max-width: 400px) {
+    .slider-text{
+        font-size: 12px;
+    }
+}
+
