@@ -17,18 +17,8 @@
     display: block;
     padding-top: 7px;
 }
-#header-image{
-    margin: auto;
-    filter: grayscale(100%);
-    // Browser Specific
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    width: 100%;
-    height: auto;
-}
 .title-index{
+    font-family: 'Playfair Display', serif;
     position: relative;
     display: block;
     text-align: center;
@@ -91,6 +81,7 @@
 
 }
 .slides h1{
+    font-family: 'Playfair Display', serif;
     position: relative;
     color: #000000;
     text-transform: uppercase;
@@ -135,7 +126,7 @@
      position: relative;
      text-align: center;
      margin: 20px auto;
-     padding: 0 20px;
+     padding: 0 5%;
      font-size: 18px;
  }
 @media (max-width: 400px) {
