@@ -23,12 +23,6 @@
     display: block;
     text-align: center;
     text-transform: uppercase;
-    border-bottom: 1px solid #777777;
-    border-top: 1px solid #777777;
-}
-.title{
-    border-top: 1px solid #777777;
-    border-bottom: 1px solid #777777;
 }
 .index-image{
     width: 100%;
@@ -37,6 +31,31 @@
 }
 .contact-wr{
     padding: 15px 0;
+}
+.absolute-header{
+    position: absolute;
+    top: 75px;
+    left: 10%;
+    background-color: rgb(255, 0, 0);
+    opacity: .8;
+    width: 80%;
+    height: 322px;
+    z-index: 100;
+}
+.absolute-header span{
+    display: block;
+    color: #fff;
+    font-size: 35px;
+    margin: 60px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.absolute-header p{
+    padding: 3% 20%;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
 }
 .name{
     display:  block;
