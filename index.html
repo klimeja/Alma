@@ -15,6 +15,7 @@
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/flipefect.js"></script>
     <script>   $(window).load(function() {
 
         // more complex call
@@ -70,12 +71,33 @@
         <span> Alma invest s.r.o </span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non sem ac augue pellentesque viverra in non velit. Aliquam scelerisque, lectus vel iaculis tempus, magna ex lobortis libero, sit amet elementum justo risus a mauris. Quisque sit amet imperdiet risus, non aliquet orci. </p>
     </div>
-    <div class="container-fluid">
-    <div class="container title-index" id="about">
-        <h1>O NÁS</h1>
+    <div class="container-fluid white">
+    <div class="container">
+        <div class="row" id="service-wrapper">
+            <div class="content-service" id="content">
+            aaa
+            </div>
+            <div class="col-sm-4 service red" id="red">
+                <span>provedeme stavbu
+                 <button onclick="flipefect('red')">více</button></span>
+            </div>
+            <div class="col-sm-4 service white" id="white">
+                <span>změníme stavbu
+                 <button onclick="flipefect('white')">více</button></span>
+            </div>
+            <div class="col-sm-4 service black" id="black">
+                <span>
+                    odstraníme stavbu
+                    <button onclick="flipefect('black')">více</button>
+                </span>
+            </div>
         </div>
-        </div>
+    </div>
+    </div>
     <div class="container-fluid">
+        <div class="container title-index" id="about">
+            <h1>O NÁS</h1>
+        </div>
     <div class="container">
         <div class="col-sm-5 col-xs-12 contact-wr">
             <span class="name">Vitaliy Sinkovskyy</span>
