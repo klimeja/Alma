@@ -21,6 +21,8 @@ function flipefect(id) {
             b.style.display = 'block';
             a.style.width = '50%';
             b.style.width = '50%';
+            a.style.marginTop = '0px';
+            b.style.marginTop = '0px';
         }
         if (id == 'white'){
             document.getElementById('service-wrapper').style.height = "800px";
@@ -37,6 +39,8 @@ function flipefect(id) {
             b.style.display = 'block';
             a.style.width = '50%';
             b.style.width = '50%';
+            a.style.marginTop = '0px';
+            b.style.marginTop = '0px';
         }
         if (id == 'black'){
             document.getElementById('service-wrapper').style.height = "800px";
@@ -53,6 +57,8 @@ function flipefect(id) {
             b.style.display = 'block';
             a.style.width = '50%';
             b.style.width = '50%';
+            a.style.marginTop = '0px';
+            b.style.marginTop = '0px';
         }
     }
     else{
