@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/flipefect.js"></script>
+    <script type="text/javascript" src="js/scroll-arrow.js"></script>
     <script>   $(window).load(function() {
-
-        // more complex call
+    // more complex call
         $('.flexslider').flexslider({
             animation: "slide",
             animationSpeed: 1500,
@@ -28,7 +31,10 @@
     });</script>
 </head>
 <body>
-    <nav class="navbar navbar-default">
+<a href="#menu"><div class="arrow" id="arrow">
+        <span class="arrow"></span>
+    </div></a>
+    <nav class="navbar navbar-default" id="menu">
         <div class="container-fluid">
             <div class="container">
                 <div class="navbar-header">
@@ -53,7 +59,7 @@
         <h1>Služby</h1>
     </div>-->
     <div class="container-fluid">
-        <div class="flexslider" id="service">
+        <div class="flexslider">
             <ul class="slides">
                 <li>
                     <img src="images/worker.jpg">
@@ -75,13 +81,12 @@
     <div class="container">
         <div class="row" id="service-wrapper">
             <div class="content-service" id="content">
-            aaa
             </div>
             <div class="col-sm-4 service red" id="red">
                 <span>provedeme stavbu
                  <button onclick="flipefect('red')">více</button></span>
             </div>
-            <div class="col-sm-4 service white" id="white">
+            <div class="col-sm-4 service grey" id="white">
                 <span>změníme stavbu
                  <button onclick="flipefect('white')">více</button></span>
             </div>

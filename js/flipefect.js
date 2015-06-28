@@ -5,6 +5,9 @@ function flipefect(id) {
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     c = document.getElementById('content');
     e = document.getElementById(id);
+    $('html, body').animate({
+        scrollTop: $("#content").offset().top
+    }, 200);
     if (width > 1024) {
         if (id == 'red'){
             document.getElementById('service-wrapper').style.height = "800px";
@@ -30,10 +33,10 @@ function flipefect(id) {
             b = document.getElementById('black');
             c.style.transition = "all 1s";
             c.style.display = 'block';
-            c.style.backgroundColor = '#fff';
+            c.style.backgroundColor = '#aaa';
             c.style.color = '#aa0000';
             c.innerHTML = "<p>Nelíbí se Vám jak vypadá Váš dům, chtěli byste na něm něco změnit? Provedeme Vám jakékoliv stavební změny.</p>"+
-            "<h2>REFERENCE</h2>";
+            "<h2>REFERENCE</h2>"
             e.style.display = 'none';
             a.style.display = 'block';
             b.style.display = 'block';
