@@ -3,22 +3,23 @@
  */
 function flipefect(id) {
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    c = document.getElementById('content');
     e = document.getElementById(id);
+    cr = document.getElementById('red-content');
+    cb = document.getElementById('black-content');
+    cw = document.getElementById('white-content');
     $('html, body').animate({
-        scrollTop: $("#content").offset().top
+        scrollTop: $("#service-wrapper").offset().top
     }, 200);
     if (width > 1024) {
         if (id == 'red'){
-            document.getElementById('service-wrapper').style.height = "800px";
             a = document.getElementById('white');
             b = document.getElementById('black');
-            c.style.transition = "all 1s";
-            c.style.display = 'block';
-            c.style.backgroundColor = '#aa0000';
-            c.style.color = '#fff';
-            c.innerHTML = "<p>Provádíme stavby nejkratším možném termínu a nejvyšší možné kvalitě, máme jen spokojené zákazníky, kteří o nás hezky mluví.</p>" +
-            "<h2>REFERENCE</h2>";
+            cr.style.display = 'block';
+            cr.style.transition = "all 1s";
+            cr.style.backgroundColor = '#aa0000';
+            cr.style.color = '#fff';
+            cb.style.display = 'none';
+            cw.style.display = 'none';
             e.style.display = 'none';
             a.style.display = 'block';
             b.style.display = 'block';
@@ -28,15 +29,14 @@ function flipefect(id) {
             b.style.marginTop = '0px';
         }
         if (id == 'white'){
-            document.getElementById('service-wrapper').style.height = "800px";
             a = document.getElementById('red');
             b = document.getElementById('black');
-            c.style.transition = "all 1s";
-            c.style.display = 'block';
-            c.style.backgroundColor = '#aaa';
-            c.style.color = '#aa0000';
-            c.innerHTML = "<p>Nelíbí se Vám jak vypadá Váš dům, chtěli byste na něm něco změnit? Provedeme Vám jakékoliv stavební změny.</p>"+
-            "<h2>REFERENCE</h2>"
+            cw.style.transition = "all 1s";
+            cw.style.display = 'block';
+            cr.style.display = 'none';
+            cb.style.display = 'none';
+            cw.style.backgroundColor = '#aaa';
+            cw.style.color = '#aa0000';
             e.style.display = 'none';
             a.style.display = 'block';
             b.style.display = 'block';
@@ -46,15 +46,15 @@ function flipefect(id) {
             b.style.marginTop = '0px';
         }
         if (id == 'black'){
-            document.getElementById('service-wrapper').style.height = "800px";
             a = document.getElementById('red');
             b = document.getElementById('white');
-            c.style.transition = "all 1s";
-            c.style.display = 'block';
-            c.style.backgroundColor = '#000';
-            c.style.color = '#fff';
-            c.innerHTML = "<p> Odstaňujeme stavby velmi rychle a  šetrně, s námi se nemusíte ničeho bát </p>"+
-            "<h2>REFERENCE</h2>";
+            c = document.getElementById('black-content');
+            cb.style.transition = "all 1s";
+            cb.style.display = 'block';
+            cb.style.backgroundColor = '#000';
+            cb.style.color = '#fff';
+            cr.style.display = 'none';
+            cw.style.display = 'none';
             e.style.display = 'none';
             a.style.display = 'block';
             b.style.display = 'block';
@@ -73,13 +73,13 @@ function flipefect(id) {
         }
         if (id == 'white')
         {
-            e.innerHTML = "<p>Nelíbí se Vám jak vypadá Váš dům, chtěli byste na něm něco změnit? Provedeme Vám jakékoliv stavební změny.</p>";
-
+            e.innerHTML = "<p>Nelíbí se Vám jak vypadá Váš dům, chtěli byste na něm něco změnit? Provedeme Vám jakékoliv stavební změny.</p>"+
+            "<h2>REFERENCE</h2>";
         }
         if (id == 'black')
         {
-            e.innerHTML = "<p> Odstaňujeme stavby velmi rychle a  šetrně, s námi se nemusíte ničeho bát </p>";
-
+            e.innerHTML = "<p> Odstaňujeme stavby velmi rychle a  šetrně, s námi se nemusíte ničeho bát </p>"+
+            "<h2>REFERENCE</h2>";
         }
     }
 }

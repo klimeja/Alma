@@ -5,11 +5,11 @@
     font-family: "Flat-it-Compasse-Bold";
     src: url("../fonts/Flat-it%20-%20Compasse-Bold.otf");
 }
-body{
+/*body{
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+}*/
 .house:before{
     content:  "\f015";
     font-family: FontAwesome-web;
@@ -23,7 +23,7 @@ body{
     padding-top: 7px;
 }
 .title-index{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', serif;
     position: relative;
     display: block;
     text-align: center;
@@ -37,6 +37,10 @@ body{
 }
 .contact-wr{
     padding: 15px 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    margin: 10px 0;
 }
 .absolute-header{
     position: absolute;
@@ -87,6 +91,9 @@ body{
     -moz-transition-duration: 1s;
     -ms-transition-property: transform;
     -ms-transition-duration: 1s;
+}
+.service h2{
+    font-family: 'Montserrat', sans-serif;
 }
 .service button{
     border: 0;
@@ -145,43 +152,17 @@ body{
     background-color: #000;
     color: #fff;
 }
-.name{
-    display:  block;
-    font-size: 25px;
-    margin: 10px 0 0 45px;
-    text-transform: uppercase;
-}
-.foto{
-    position: relative;
-    display: block;
-    margin: 5px 0 0 82px;
-    border-radius: 200pxl;
-}
-.mobil{
-    display: block;
-    font-size: 18px;
-    margin: 20px 0 0 84px;
-}
-.email{
-    display: block;
-    font-size: 18px;
-    margin: 20px 0 0 76px;
-}
 .position{
-    margin: 2px 0 20px 75px;
+    margin: auto;
+    text-align: center;
+    display: block;
     font-size: 15px;
 }
 .mapa{
-    height: 400px;
+    height: 270px;
+    margin: auto;
 }
 @media (max-width: 768px) {
-    .name,
-    .foto,
-    .mobil,
-    .email,
-    .position{
-        margin: auto;
-    }
     .contact-wr{
         text-align: center;
     }
@@ -234,7 +215,7 @@ body{
 .arrow{
     position: fixed;
     display: none;
-    bottom: 10px;
+    bottom: 45px;
     right: 10px;
     width: 50px;
     height: 50px;
@@ -246,5 +227,98 @@ body{
     font-family: FontAwesome-web;
     color: #fff;
     font-size: 30px;
-    padding: 12px 11px;
+    padding: 12px 11px 0;
+}
+.name:before{
+    display: inline-block;
+    content: "\f21b";
+    font-family: FontAwesome-web;
+    color: #aa0000;
+    font-size: 21px;
+    padding: 0 10px 0 0;
+}
+.name{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+.phone:before{
+    display: inline-block;
+    content: "\f095";
+    font-family: FontAwesome-web;
+    color: #aa0000;
+    font-size: 21px;
+    padding: 0 10px 0 20px;
+}
+.phone{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+.info{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.email:before{
+    display: inline-block;
+    content: "\f0e0";
+    font-family: FontAwesome-web;
+    color: #aa0000;
+    font-size: 21px;
+    padding: 0 10px 0 20px;
+}
+.email{
+    font-family: Montserrat;
+    font-size: 18px;
+}
+.mail-link{
+    color: #333;
+    text-decoration: none;
+}
+.footer {
+    background-color: #000;
+    font-family: 'Open Sans', 'sans-serif';
+}
+.copyright{
+    position: relative;
+    display: block;
+    padding:5px;
+    color: #ffffff;
+}
+.developed{
+    position: relative;
+    display: block;
+    padding: 5px;
+    color: #fff;
+    text-align: right;
+}
+.name-footer{
+    color: #aa0000;
+}
+.triangle{
+    display: none;
+}
+.gallery{
+    text-align: center;
+}
+#red-content{
+    display: none;
+}
+#black-content{
+    display: none;
+}
+#white-content{
+    display: none;
+}
+@media (max-width: 786px) {
+    .developed{
+        text-align: center;
+    }
+    .copyright{
+        text-align: center;
+    }
+}
+@media (min-width: 1024px) {
+    .mapa{
+        margin: 0 0 0 5%;
+    }
 }
