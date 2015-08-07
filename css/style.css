@@ -364,7 +364,25 @@
     min-height: 300px;
     margin: 20px 0;
 }
-
+ul{
+    list-style: none outside none;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+.gallery li {
+    display: inline-block;
+    height: 200px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    width: 200px;
+}
+.gallery li a {
+    height: 200px;
+    width: 200px;
+}
+.gallery li a img {
+    max-width: 200px;
+}
 
 
 

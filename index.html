@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet"  href="css/lightGallery.css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -21,6 +21,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/flipefect.js"></script>
     <script type="text/javascript" src="js/scroll-arrow.js"></script>
+    <script src="js/lightGallery.js"></script>
     <script>   $(window).load(function() {
     // more complex call
         $('.flexslider').flexslider({
@@ -30,6 +31,21 @@
             controlNav:false
         });
     });</script>
+    <script>
+        $(document).ready(function() {
+            $("#light-gallery-1").lightGallery();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#light-gallery-2").lightGallery();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#light-gallery-3").lightGallery();
+        });
+    </script>
 </head>
 <body>
 <a href="#menu"><div class="arrow" id="arrow">
@@ -84,41 +100,140 @@
             <div class="content-service" id="red-content">
                 <p>Provádíme stavby nejkratším možném termínu a nejvyšší možné kvalitě, máme jen spokojené zákazníky, kteří o nás hezky mluví.</p>
                 <h2>REFERENCE</h2>
-                <div class="gallery">
-                <div id="cp_widget_7fca904b-5852-4838-9ff1-55ca02cd79f0">...</div><script type="text/javascript">
-                var cpo = []; cpo["_object"] ="cp_widget_7fca904b-5852-4838-9ff1-55ca02cd79f0"; cpo["_fid"] = "AQAAnsc-IFxc";
-                var _cpmp = _cpmp || []; _cpmp.push(cpo);
-                (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-                    cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-                    var c = document.getElementsByTagName("script")[0];
-                    c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='http://www.cincopa.com/video-hosting'>Video Hosting for Business</a> solution.<span>New Gallery 2015/7/7</span><span>kaňon</span><span>voda v lese</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 2048</span><span>height</span><span> 1365</span><span>kopce</span><span>kopce se stromama</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 2500</span><span>height</span><span> 1667</span><span>město západ slunce</span><span>město při západu slunce</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 3428</span><span>camerasoftware</span><span> Adobe Photoshop Ligh</span><span>originaldate</span><span> 2/18/2015 1:49:22 AM</span><span>width</span><span> 5142</span><span>cameramodel</span><span> Canon EOS 6D</span><span>týpek někam leze</span><span>turista někam jde</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 2000</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Adobe Photoshop CS6 </span><span>originaldate</span><span> 3/18/2015 10:01:37 AM</span><span>width</span><span> 3000</span><span>cameramodel</span><span> Canon EOS 5D Mark II</span><span>krajina fialová</span><span>horizont fialovej</span><span>cameramake</span><span> NIKON CORPORATION</span><span>height</span><span> 4000</span><span>camerasoftware</span><span> Adobe Photoshop Ligh</span><span>originaldate</span><span> 1/8/2015 12:21:43 PM</span><span>width</span><span> 6000</span><span>cameramodel</span><span> NIKON D3300</span><span>týpek na lavičce</span><span>týpek sedí na lavičce a čumí do pouště </span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 3411</span><span>camerasoftware</span><span> Adobe Photoshop Ligh</span><span>originaldate</span><span> 4/5/2015 5:19:12 PM</span><span>width</span><span> 5116</span><span>cameramodel</span><span> Canon EOS-1D X</span><span>kolo a slunce</span><span>kolo při západu slunce</span><span>flash</span><span> 16</span><span>cameramake</span><span> NIKON CORPORATION</span><span>height</span><span> 3264</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Ver.1.01 </span><span>originaldate</span><span> 8/13/2014 12:02:46 AM</span><span>width</span><span> 4928</span><span>cameramodel</span><span> NIKON D5100</span><span>dům černobílý</span><span>dům v moři</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 4912</span><span>height</span><span> 2760</span></noscript>
-            </div>
+                <ul id="light-gallery-1" class="gallery">
+                    <li data-src="images/house-1.jpg">
+                        <a href="#">
+                            <img src="images/thumb-1.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-2.jpg" >
+                        <a href="#">
+                            <img src="images/thumb-2.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-3.jpg">
+                        <a href="#">
+                            <img src="images/thumb-3.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-4.jpg">
+                        <a href="#">
+                            <img src="images/thumb-4.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-1.jpg">
+                        <a href="#">
+                            <img src="images/thumb-1.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-2.jpg" >
+                        <a href="#">
+                            <img src="images/thumb-2.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-3.jpg">
+                        <a href="#">
+                            <img src="images/thumb-3.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-4.jpg">
+                        <a href="#">
+                            <img src="images/thumb-4.jpg" />
+                        </a>
+                    </li>
+                </ul>
                 </div>
             <div class="content-service" id="black-content">
                 <p>Odstaňujeme stavby velmi rychle a  šetrně, s námi se nemusíte ničeho bát.</p>
                 <h2>REFERENCE</h2>
-                <div class="gallery">
-                    <div id="cp_widget_7fca904b-5852-4838-9ff1-55ca02cd79f1">...</div><script type="text/javascript">
-                    var cpo = []; cpo["_object"] ="cp_widget_7fca904b-5852-4838-9ff1-55ca02cd79f1"; cpo["_fid"] = "AQAAnsc-IFxc";
-                    var _cpmp = _cpmp || []; _cpmp.push(cpo);
-                    (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-                        cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-                        var c = document.getElementsByTagName("script")[0];
-                        c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='http://www.cincopa.com/video-hosting'>Video Hosting for Business</a> solution.<span>New Gallery 2015/7/7</span><span>kaňon</span><span>voda v lese</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 2048</span><span>height</span><span> 1365</span><span>kopce</span><span>kopce se stromama</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 2500</span><span>height</span><span> 1667</span><span>město západ slunce</span><span>město při západu slunce</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 3428</span><span>camerasoftware</span><span> Adobe Photoshop Ligh</span><span>originaldate</span><span> 2/18/2015 1:49:22 AM</span><span>width</span><span> 5142</span><span>cameramodel</span><span> Canon EOS 6D</span><span>týpek někam leze</span><span>turista někam jde</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 2000</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Adobe Photoshop CS6 </span><span>originaldate</span><span> 3/18/2015 10:01:37 AM</span><span>width</span><span> 3000</span><span>cameramodel</span><span> Canon EOS 5D Mark II</span><span>krajina fialová</span><span>horizont fialovej</span><span>cameramake</span><span> NIKON CORPORATION</span><span>height</span><span> 4000</span><span>camerasoftware</span><span> Adobe Photoshop Ligh</span><span>originaldate</span><span> 1/8/2015 12:21:43 PM</span><span>width</span><span> 6000</span><span>cameramodel</span><span> NIKON D3300</span><span>týpek na lavičce</span><span>týpek sedí na lavičce a čumí do pouště </span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 3411</span><span>camerasoftware</span><span> Adobe Photoshop Ligh</span><span>originaldate</span><span> 4/5/2015 5:19:12 PM</span><span>width</span><span> 5116</span><span>cameramodel</span><span> Canon EOS-1D X</span><span>kolo a slunce</span><span>kolo při západu slunce</span><span>flash</span><span> 16</span><span>cameramake</span><span> NIKON CORPORATION</span><span>height</span><span> 3264</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Ver.1.01 </span><span>originaldate</span><span> 8/13/2014 12:02:46 AM</span><span>width</span><span> 4928</span><span>cameramodel</span><span> NIKON D5100</span><span>dům černobílý</span><span>dům v moři</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 4912</span><span>height</span><span> 2760</span></noscript>
-                </div>
+                <ul id="light-gallery-2" class="gallery">
+                    <li data-src="images/house-1.jpg">
+                        <a href="#">
+                            <img src="images/thumb-1.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-2.jpg" >
+                        <a href="#">
+                            <img src="images/thumb-2.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-3.jpg">
+                        <a href="#">
+                            <img src="images/thumb-3.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-4.jpg">
+                        <a href="#">
+                            <img src="images/thumb-4.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-1.jpg">
+                        <a href="#">
+                            <img src="images/thumb-1.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-2.jpg" >
+                        <a href="#">
+                            <img src="images/thumb-2.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-3.jpg">
+                        <a href="#">
+                            <img src="images/thumb-3.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-4.jpg">
+                        <a href="#">
+                            <img src="images/thumb-4.jpg" />
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="content-service" id="white-content">
                 <p>Nelíbí se Vám jak vypadá Váš dům, chtěli byste na něm něco změnit? Provedeme Vám jakékoliv stavební změny.</p>
                 <h2>REFERENCE</h2>
-                <div class="gallery">
-                    <div id="cp_widget_7fca904b-5852-4838-9ff1-55ca02cd79f2">...</div><script type="text/javascript">
-                    var cpo = []; cpo["_object"] ="cp_widget_7fca904b-5852-4838-9ff1-55ca02cd79f2"; cpo["_fid"] = "AQAAnsc-IFxc";
-                    var _cpmp = _cpmp || []; _cpmp.push(cpo);
-                    (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-                        cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-                        var c = document.getElementsByTagName("script")[0];
-                        c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='http://www.cincopa.com/video-hosting'>Video Hosting for Business</a> solution.<span>New Gallery 2015/7/7</span><span>kaňon</span><span>voda v lese</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 2048</span><span>height</span><span> 1365</span><span>kopce</span><span>kopce se stromama</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 2500</span><span>height</span><span> 1667</span><span>město západ slunce</span><span>město při západu slunce</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 3428</span><span>camerasoftware</span><span> Adobe Photoshop Ligh</span><span>originaldate</span><span> 2/18/2015 1:49:22 AM</span><span>width</span><span> 5142</span><span>cameramodel</span><span> Canon EOS 6D</span><span>týpek někam leze</span><span>turista někam jde</span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 2000</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Adobe Photoshop CS6 </span><span>originaldate</span><span> 3/18/2015 10:01:37 AM</span><span>width</span><span> 3000</span><span>cameramodel</span><span> Canon EOS 5D Mark II</span><span>krajina fialová</span><span>horizont fialovej</span><span>cameramake</span><span> NIKON CORPORATION</span><span>height</span><span> 4000</span><span>camerasoftware</span><span> Adobe Photoshop Ligh</span><span>originaldate</span><span> 1/8/2015 12:21:43 PM</span><span>width</span><span> 6000</span><span>cameramodel</span><span> NIKON D3300</span><span>týpek na lavičce</span><span>týpek sedí na lavičce a čumí do pouště </span><span>flash</span><span> 16</span><span>cameramake</span><span> Canon</span><span>height</span><span> 3411</span><span>camerasoftware</span><span> Adobe Photoshop Ligh</span><span>originaldate</span><span> 4/5/2015 5:19:12 PM</span><span>width</span><span> 5116</span><span>cameramodel</span><span> Canon EOS-1D X</span><span>kolo a slunce</span><span>kolo při západu slunce</span><span>flash</span><span> 16</span><span>cameramake</span><span> NIKON CORPORATION</span><span>height</span><span> 3264</span><span>orientation</span><span> 1</span><span>camerasoftware</span><span> Ver.1.01 </span><span>originaldate</span><span> 8/13/2014 12:02:46 AM</span><span>width</span><span> 4928</span><span>cameramodel</span><span> NIKON D5100</span><span>dům černobílý</span><span>dům v moři</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 4912</span><span>height</span><span> 2760</span></noscript>
-                </div>
+                <ul id="light-gallery-3" class="gallery">
+                    <li data-src="images/house-1.jpg">
+                        <a href="#">
+                            <img src="images/thumb-1.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-2.jpg" >
+                        <a href="#">
+                            <img src="images/thumb-2.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-3.jpg">
+                        <a href="#">
+                            <img src="images/thumb-3.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-4.jpg">
+                        <a href="#">
+                            <img src="images/thumb-4.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-1.jpg">
+                        <a href="#">
+                            <img src="images/thumb-1.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-2.jpg" >
+                        <a href="#">
+                            <img src="images/thumb-2.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-3.jpg">
+                        <a href="#">
+                            <img src="images/thumb-3.jpg" />
+                        </a>
+                    </li>
+                    <li data-src="images/house-4.jpg">
+                        <a href="#">
+                            <img src="images/thumb-4.jpg" />
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="col-sm-4 service red" id="red">
                 <span>provedeme stavbu
