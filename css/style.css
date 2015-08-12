@@ -23,7 +23,7 @@
     padding-top: 7px;
 }
 .title-index{
-    font-family: 'Montserrat', serif;
+    font-family: "Alegreya Sans SC",sans-serif;
     position: relative;
     display: block;
     text-align: center;
@@ -164,11 +164,11 @@
     color: #aa0000;
     background-color: #aaa;
 }
-.white{
+.white-color{
     color: #aa0000;
     background-color: #fff;
 }
-.red{
+.red-color{
     background-color: #aa0000;
     color: #fff;
 }
@@ -382,6 +382,87 @@ ul{
 }
 .gallery li a img {
     max-width: 200px;
+}
+.form-wrapper{
+    margin: auto;
+    text-align: center;
+    padding: 18px 0 0;
+}
+.form-wrapper h2{
+    font-size: 24px;
+    padding: 0 0 5px;
+    color: #1a80d2;
+    font-family: RobotoSlab-Light;
+}
+.form-wrapper .form{
+    display: block;
+    margin: auto;
+    width: 300px;
+    color: #333333;
+    text-align: center;
+}
+.form-wrapper .form tr{
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.form-wrapper .form td{
+    text-align: left;
+    font-family: "Flat-it-Compasse-Bold", Verdana, Tahoma;
+    font-size: 16px;
+}
+.form-wrapper .form td input{
+    width: 299px;
+    height: 38px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.form-wrapper .form td textarea{
+    width: 299px;
+    height: 118px;
+    resize: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.form-wrapper .contact{
+    margin: 23px auto 38px;
+}
+.red{
+    position: relative;
+    display: block;
+    margin: 77px auto 0;
+    width: 200px;
+    height: 60px;
+    background-color: #aa0000;
+    text-transform: uppercase;
+    font-family: Flat-it-Compasse-Bold;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 0 -3px #4d4d4d;
+    box-shadow: 0 1px 0 0 #4d4d4d;
+}
+.white{
+    position: relative;
+    display: block;
+    margin: -30px auto 0;
+    width: 200px;
+    height: 40px;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family: Flat-it-Compasse-Bold;
+    font-size: 16px;
+    color: #aa0000;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 0 -3px #4d4d4d;
+    box-shadow: 0 1px 0 0 #4d4d4d;
 }
 
 
