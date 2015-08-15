@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet"  href="css/lightGallery.css"/>
+    <link rel="stylesheet"  href="css/magnific-popup.css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -21,6 +22,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/flipefect.js"></script>
     <script type="text/javascript" src="js/scroll-arrow.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
     <script src="js/lightGallery.js"></script>
     <script src="js/emailForm.js"></script>
     <script>   $(window).load(function() {
@@ -35,16 +37,14 @@
     <script>
         $(document).ready(function() {
             $("#light-gallery-1").lightGallery();
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
             $("#light-gallery-2").lightGallery();
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
             $("#light-gallery-3").lightGallery();
+            $('.contact-toggle').magnificPopup({
+                items: {
+                    src: '#popUp',
+                    type: 'inline'
+                }
+            })
         });
     </script>
 </head>
@@ -94,13 +94,13 @@
     <div class="absolute-header">
         <span> Alma invest s.r.o </span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non sem ac augue pellentesque viverra in non velit. Aliquam scelerisque, lectus vel iaculis tempus, magna ex lobortis libero, sit amet elementum justo risus a mauris. Quisque sit amet imperdiet risus, non aliquet orci. </p>
-        <a  href="#contact-form"><button  class="white contact">NAPIŠTE NÁM</button></a>
     </div>
     <div class="container-fluid white-color">
     <div class="container">
         <div class="row" id="service-wrapper">
             <div class="content-service" id="red-content">
                 <p>Provádíme stavby nejkratším možném termínu a nejvyšší možné kvalitě, máme jen spokojené zákazníky, kteří o nás hezky mluví.</p>
+                <button  class="white contact contact-toggle">NAPIŠTE NÁM</button>
                 <h2>REFERENCE</h2>
                 <ul id="light-gallery-1" class="gallery">
                     <li data-src="images/house-1.jpg">
@@ -147,6 +147,7 @@
                 </div>
             <div class="content-service" id="black-content">
                 <p>Odstaňujeme stavby velmi rychle a  šetrně, s námi se nemusíte ničeho bát.</p>
+                <button  class="white contact contact-toggle">NAPIŠTE NÁM</button>
                 <h2>REFERENCE</h2>
                 <ul id="light-gallery-2" class="gallery">
                     <li data-src="images/house-1.jpg">
@@ -193,6 +194,7 @@
             </div>
             <div class="content-service" id="white-content">
                 <p>Nelíbí se Vám jak vypadá Váš dům, chtěli byste na něm něco změnit? Provedeme Vám jakékoliv stavební změny.</p>
+                <button  class="white contact contact-toggle">NAPIŠTE NÁM</button>
                 <h2>REFERENCE</h2>
                 <ul id="light-gallery-3" class="gallery">
                     <li data-src="images/house-1.jpg">
@@ -276,9 +278,8 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.7836908516397!2d14.522694600000001!3d50.7425007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47096cf00821b101%3A0x4b0f35edfc36db0d!2zU2thbGljZSB1IMSMZXNrw6kgTMOtcHkgNDE1LCA0NzEgMTcgU2thbGljZSB1IMSMZXNrw6kgTMOtcHk!5e0!3m2!1scs!2scz!4v1436277509025" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         </div>
-<div class="container">
-    <div class="form-wrapper">
-        <div class="container title-index" id="contact-form">
+    <div class="form-wrapper popup-basic  mfp-hide" id="popUp">
+        <div class=" title-index" id="contact-form">
             <h1>NAPIŠTE NÁM IHNED</h1>
         </div>
         <form id="contact_form">
@@ -304,7 +305,6 @@
             </table>
             <button id="submit" name="submit" class="red contact">ODESLAT</button>
         </form>
-    </div>
     </div>
 <div class="container-fluid footer">
     <div class="container">

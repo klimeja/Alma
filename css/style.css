@@ -152,7 +152,7 @@
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding: 3% 10%;
+    padding: 3% 10% 0;
     font-size: 21px;
 }
 .content-service h2{
@@ -387,9 +387,16 @@ ul{
     margin: auto;
     text-align: center;
     padding: 18px 0 0;
+    background-color: #fff;
+    width: 40%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding-bottom: 2%;
 }
 .form-wrapper h2{
     font-size: 24px;
+    text-align: center;
     padding: 0 0 5px;
     color: #1a80d2;
     font-family: RobotoSlab-Light;
@@ -449,7 +456,7 @@ ul{
 .white{
     position: relative;
     display: block;
-    margin: -30px auto 0;
+    margin: 2% auto 3% ;
     width: 200px;
     height: 40px;
     background-color: #fff;
